@@ -1,12 +1,12 @@
 class ExercisesHardcodedData {
-  List<Map<String, dynamic>> exercisesMap = [
+  List<Map<String, dynamic>> program = [
     // Lunes
     {
       'day': 'Lunes',
-      'muscles targeted': ['Cuadriceps', 'Pantorrilla', 'Abs'],
-      'exercises': [
+      'muscles': [
         {
-          'Cuadriceps': [
+          'muscle': 'Cuadriceps',
+          'exercises': [
             {
               'exercise': 'Extensiones',
               'sets': 4,
@@ -28,7 +28,8 @@ class ExercisesHardcodedData {
           ],
         },
         {
-          'Pantorrilla': [
+          'muscle': 'Pantorrillas',
+          'exercises': [
             {
               'exercise': 'Sentado (Soleo)',
               'sets': 4,
@@ -44,7 +45,8 @@ class ExercisesHardcodedData {
           ]
         },
         {
-          'Abdomen': [
+          'muscle': 'Abdomen',
+          'exercises': [
             {
               'exercise':
                   'Recto abdominal en colchoneta con  piernas cruzadas en el aire',
@@ -66,10 +68,10 @@ class ExercisesHardcodedData {
     // Martes
     {
       'day': 'Martes',
-      'muscles': ['Pecho', 'Triceps', 'Abs'],
-      'exercises': [
+      'muscles': [
         {
-          'Pecho': [
+          'muscle': 'Pecho',
+          'exercises': [
             {
               'exercise': 'Press plano con barra',
               'sets': 4,
@@ -97,7 +99,8 @@ class ExercisesHardcodedData {
           ],
         },
         {
-          'Triceps': [
+          'muscle': 'Triceps',
+          'exercises': [
             {
               'exercise': 'Polea para triceps con cuerda',
               'sets': 4,
@@ -120,7 +123,8 @@ class ExercisesHardcodedData {
           ]
         },
         {
-          'Abdomen': [
+          'muscle': 'Abdomen',
+          'exercises': [
             {
               'exercise':
                   'Recto abdominal en colchoneta con  piernas cruzadas en el aire',
@@ -142,10 +146,10 @@ class ExercisesHardcodedData {
     // Miercoles
     {
       'day': 'Miercoles',
-      'muscles': ['Espalda', 'Biceps', 'Antebrazo', 'Abs'],
-      'exercises': [
+      'muscles': [
         {
-          'Espalda': [
+          'muscle': 'Espalda',
+          'exercises': [
             {
               'exercise': 'Remo bajo en polea con agarre amplio',
               'sets': 4,
@@ -173,7 +177,8 @@ class ExercisesHardcodedData {
           ],
         },
         {
-          'Biceps': [
+          'muscle': 'Biceps',
+          'exercises': [
             {
               'exercise': 'Curl barra recta de pie',
               'sets': 4,
@@ -195,7 +200,8 @@ class ExercisesHardcodedData {
           ]
         },
         {
-          'Abdomen': [
+          'muscle': 'Abdomen',
+          'exercises': [
             {
               'exercise':
                   'Recto abdominal en colchoneta con  piernas cruzadas en el aire',
@@ -218,13 +224,9 @@ class ExercisesHardcodedData {
     {
       'day': 'Jueves',
       'muscles': [
-        'Hombros',
-        'Trapecio',
-        'Abs',
-      ],
-      'exercises': [
         {
-          'Hombros': [
+          'muscle': 'Hombros',
+          'exercises': [
             {
               'exercise': 'Elevacion lateral con mancuerna sentado',
               'sets': 4,
@@ -252,7 +254,8 @@ class ExercisesHardcodedData {
           ],
         },
         {
-          'Abdomen': [
+          'muscle': 'Abdomen',
+          'exercises': [
             {
               'exercise':
                   'Recto abdominal en colchoneta con  piernas cruzadas en el aire',
@@ -274,10 +277,10 @@ class ExercisesHardcodedData {
     // Viernes
     {
       'day': 'Viernes',
-      'muscles': ['Femoral', 'Pantorrilla', 'Gluteos', 'Abs'],
-      'exercises': [
+      'muscles': [
         {
-          'Femoral': [
+          'muscle': 'Femoral',
+          'exercises': [
             {
               'exercise': 'Femoral maquina',
               'sets': 4,
@@ -299,7 +302,8 @@ class ExercisesHardcodedData {
           ],
         },
         {
-          'Pantorrilla': [
+          'muscle': 'Pantorrillas',
+          'exercises': [
             {
               'exercise': 'Sentado (Soleo)',
               'sets': 4,
@@ -315,7 +319,8 @@ class ExercisesHardcodedData {
           ]
         },
         {
-          'Gluteos': [
+          'muscle': 'Gluteos',
+          'exercises': [
             {
               'exercise': 'Hip thrust',
               'sets': 4,
@@ -343,7 +348,8 @@ class ExercisesHardcodedData {
           ],
         },
         {
-          'Abdomen': [
+          'muscle': 'Abdomen',
+          'exercises': [
             {
               'exercise':
                   'Recto abdominal en colchoneta con  piernas cruzadas en el aire',
@@ -361,13 +367,11 @@ class ExercisesHardcodedData {
         },
       ]
     },
-    {
-      'day': 'Sabado',
-      'muscles': ['descanso']
-    },
-    {
-      'day': 'Domingo',
-      'muscles': ['descanso']
-    }
+
+    // Sabado
+    {'day': 'Sabado', 'muscles': []},
+
+    // Domingo
+    {'day': 'Domingo', 'muscles': []}
   ];
 }
