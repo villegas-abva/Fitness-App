@@ -27,4 +27,23 @@ dev_dependencies:
 flutter:
 
   uses-material-design: true
-  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/images/
+  fonts:
+    - family: Dongle
+      fonts:
+        - asset: assets/fonts/Dongle-Light.ttf
+        - asset: assets/fonts/Dongle-Regular.ttf
+        - asset: assets/fonts/Dongle-Bold.ttf
+
+    - family: RedHat
+      fonts:
+        - asset: assets/fonts/RedHatDisplay-Regular.ttf
+        - asset: assets/fonts/RedHatDisplay-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/RedHatDisplay-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/RedHatDisplay-Black.ttf
+          weight: 900
+
+    
