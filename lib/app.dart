@@ -1,4 +1,4 @@
-import 'package:fit_app/home_screen.dart';
+import 'package:fit_app/ui/screens/home/home_screen.dart';
 import 'package:flutter/material.dart';
 
 class FitApp extends StatefulWidget {
