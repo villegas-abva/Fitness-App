@@ -1,5 +1,5 @@
 class ExercisesHardcodedData {
-  List<Map<String, dynamic>> program = [
+  List<Map<String, dynamic>> trainingProgram = [
     // Lunes
     {
       'day': 'Lunes',
