@@ -1,4 +1,4 @@
-class ExercisesHardcodedData {
+class MealsHardcodedData {
   List<Map<String, dynamic>> meals = [
     // Comida 1
     {
