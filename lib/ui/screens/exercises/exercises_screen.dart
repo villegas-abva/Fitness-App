@@ -37,7 +37,12 @@ class _ExercisesScreenState extends State<ExercisesScreen> {
     ExercisesHardcodedData data = ExercisesHardcodedData();
     var day = data.trainingProgram[dayIndex];
 
-    return _buildExerciseCard(day);
+    return Column(
+      children: [
+        _buildDays(),
+        _buildExerciseCard(day),
+      ],
+    );
   }
 
   Widget _buildDays() {

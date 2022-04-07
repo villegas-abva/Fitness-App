@@ -28,7 +28,7 @@ class _HomeScreenState extends State<HomeScreen> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               _buildCategories(),
-              SizedBox(height: 30),
+              const SizedBox(height: 20),
               pages[selectedIndex],
             ],
           ),
@@ -42,7 +42,7 @@ class _HomeScreenState extends State<HomeScreen> {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         _buildCategoryOption(
-            selectedIndex: 0,
+            index: 0,
             imagePath: 'assets/images/weights.jpeg',
             onTap: () {
               setState(() {
@@ -53,7 +53,7 @@ class _HomeScreenState extends State<HomeScreen> {
           width: 15,
         ),
         _buildCategoryOption(
-            selectedIndex: 1,
+            index: 1,
             imagePath: 'assets/images/nutrition.jpeg',
             onTap: () {
               setState(() {
@@ -65,15 +65,20 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   Widget _buildCategoryOption(
-      {required int selectedIndex,
+      {required int index,
       required String imagePath,
       required VoidCallback onTap}) {
     return ClipOval(
       child: Material(
-        color: Colors.transparent,
+        color: Colors.black,
         child: Ink.image(
           image: AssetImage(imagePath),
           fit: BoxFit.cover,
+          colorFilter: ColorFilter.mode(
+              index == selectedIndex
+                  ? Colors.white
+                  : Colors.black.withOpacity(0.35),
+              BlendMode.dstATop),
           height: 150,
           width: 150,
           child: InkWell(onTap: onTap),
