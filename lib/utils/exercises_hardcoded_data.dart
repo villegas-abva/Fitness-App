@@ -419,9 +419,23 @@ class ExercisesHardcodedData {
     },
 
     // Sabado
-    {'day': 'Sabado', 'muscles': []},
+    {
+      'day': 'Sabado',
+      'muscles': [
+        {
+          'muscle': 'Abdomen',
+        }
+      ]
+    },
 
     // Domingo
-    {'day': 'Domingo', 'muscles': []}
+    {
+      'day': 'Domingo',
+      'muscles': [
+        {
+          'muscle': 'Abdomen',
+        }
+      ]
+    },
   ];
 }

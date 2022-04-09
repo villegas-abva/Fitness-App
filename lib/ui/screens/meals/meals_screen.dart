@@ -1,6 +1,5 @@
 import 'package:fit_app/ui/common/widgets/text/app_large_text.dart';
 import 'package:fit_app/ui/common/widgets/text/app_regular_text.dart';
-import 'package:fit_app/utils/exercises_hardcoded_data.dart';
 import 'package:fit_app/utils/meals_hardcoded_data.dart';
 import 'package:flutter/material.dart';
 
