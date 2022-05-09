@@ -3,8 +3,10 @@ import 'package:fit_app/app.dart';
 import 'package:flutter/material.dart';
 
 void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
+  // WidgetsFlutterBinding.ensureInitialized();
 
-  await Firebase.initializeApp();
+  // await Firebase.initializeApp();
   runApp(const FitApp());
 }
+
+// test permission
